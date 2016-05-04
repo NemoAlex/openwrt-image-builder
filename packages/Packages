@@ -5246,21 +5246,6 @@ MD5Sum: f0d27e277cb5fcccd14f9bc25399127e
 SHA256sum: 3669f77e52a7e8e4a5b24564844366786f55d0de526307c9da36a129cc4aaa16
 Description:  Kernel modules for Marvell TOPDOG 802.11 Wireless cards
 
-Package: kmod-mwlwifi
-Version: 3.18.23+10.3.0.16-20160105-1
-Depends: kernel (=3.18.23-1-81be0e40bf30c51dba2c46c84dd50f29), kmod-mac80211
-Source: package/kernel/mwlwifi
-License: ISC
-Section: kernel
-Maintainer: Imre Kaloz <kaloz@openwrt.org>
-Architecture: mvebu
-Installed-Size: 231259
-Filename: base/kmod-mwlwifi_3.18.23+10.3.0.16-20160105-1_mvebu.ipk
-Size: 232046
-MD5Sum: 6f07aa93d5fad9cd88eb75fbf982d1ec
-SHA256sum: 2d965b6258f7316dbe019e57b602440969f9d3ceb7548bc4d7d7f9b784a5b6cd
-Description:  Marvell 88W8864 wireless driver
-
 Package: kmod-natsemi
 Version: 3.18.23-1
 Depends: kernel (=3.18.23-1-81be0e40bf30c51dba2c46c84dd50f29)
@@ -9424,19 +9409,35 @@ SHA256sum: 09330a2ff6ed26a7c97fbc2a260e80bbdd251b88e24ea2f274805a31f8b878e2
 Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
  utility
 
+Package: kmod-fs-exfat
+Version: 3.18.23+git-20150301-1
+Depends: kernel (=3.18.23-1-81be0e40bf30c51dba2c46c84dd50f29), kmod-nls-base
+Source: feeds/packages/kernel/exfat-nofuse
+License: GPL-2.0
+LicenseFiles: LICENSE
+Section: kernel
+Maintainer: Bruno Randolf <br1@einfach.org>
+Architecture: mvebu
+Installed-Size: 44993
+Filename: custom/kmod-fs-exfat_3.18.23+git-20150301-1_mvebu.ipk
+Size: 45663
+MD5Sum: 6b56e89ce967bd9f4587f768c547a230
+SHA256sum: e4c4e94eb89217451c677d6484cf2ad687bebba17114c7cd643bab040b01cbec
+Description:  Kernel module for ExFAT Filesytems
+
 Package: kmod-mwlwifi
-Version: 3.18.23+10.3.0.15-20151216-1
+Version: 3.18.23+10.3.0.17-20160324-1
 Depends: kernel (=3.18.23-1-81be0e40bf30c51dba2c46c84dd50f29), kmod-mac80211
 Source: package/kernel/mwlwifi
 License: ISC
 Section: kernel
 Maintainer: Imre Kaloz <kaloz@openwrt.org>
 Architecture: mvebu
-Installed-Size: 466514
-Filename: custom/kmod-mwlwifi_3.18.23+10.3.0.15-20151216-1_mvebu.ipk
-Size: 467342
-MD5Sum: 6e2f498f6fe10e5e24fd6c57b496878b
-SHA256sum: c6ddcd8632ed001562668814cf6d591f325290df78f3a8501dd7fc29b5a221a1
+Installed-Size: 229748
+Filename: custom/kmod-mwlwifi_3.18.23+10.3.0.17-20160324-1_mvebu.ipk
+Size: 230257
+MD5Sum: ea325fdf8f884234390ac705cac0216a
+SHA256sum: 4e7e8a2e221bd92518e20d5d2245134609bd7d736049b0a1ec310d5241f5e37c
 Description:  Marvell 88W8864 wireless driver
 
 Package: luci-app-chinadns
