@@ -33,3 +33,11 @@ config command
 config command
         option name 'Stop aria2'
         option command 'killall aria2c'
+
+config command
+        option name 'Install Adbyby'
+        option command 'sh /scripts/install_adbyby'
+
+config command
+        option name 'Uninstall Adbyby'
+        option command 'sh /scripts/uninstall_adbyby'

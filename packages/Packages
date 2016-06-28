@@ -9360,22 +9360,6 @@ MD5Sum: 4164aa87d02863e5ade47207f30324e4
 SHA256sum: 3c0ca14f594988dae83b0a27bebd522c18b7bc057209f45474e0ea5cbe1505a7
 Description:  Compressed RAM block device support
 
-Package: ChinaDNS
-Version: 1.3.2-3
-Depends: libc
-Source: package/chinadns
-License: GPLv3
-LicenseFiles: COPYING
-Section: net
-Maintainer: clowwindy <clowwindy42@gmail.com>
-Architecture: mvebu
-Installed-Size: 25357
-Filename: custom/ChinaDNS_1.3.2-3_mvebu.ipk
-Size: 25703
-MD5Sum: 31d62ab1db09b81678b31bfaa1f3fa87
-SHA256sum: f9f8fd2d9399b25e36d31e93f2698b93158bf3b920eca84ab4fad59f1bd6df29
-Description:  A DNS forwarder that ignores incorrect(you knew it) responses.
-
 Package: ShadowVPN
 Version: 0.2.0-1
 Depends: libc, kmod-tun, ip
@@ -9391,6 +9375,22 @@ Size: 29924
 MD5Sum: 4e8d770fc32e0414d538254d00438636
 SHA256sum: 4b644451f0a44ed0edecde2c5cb764831620fe28d3f9ee1843d7d46fcc6f7b8b
 Description:  A fast, safe VPN based on libsodium
+
+Package: adbyby
+Version: 2.6-20160420
+Depends: libc, libstdcpp
+Source: package/adbyby
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Chen RuiWei <crwbak@gmail.com>
+Architecture: mvebu
+Installed-Size: 514282
+Filename: custom/adbyby_2.6-20160420_mvebu.ipk
+Size: 515132
+MD5Sum: 741126291053ea808be2e54412119609
+SHA256sum: dd40279653e3c565694f0b374865840286ed7022fbcdd3987329664ef761903c
+Description:  Powerful Advertisement Blocker
 
 Package: aria2
 Version: 1.21.0-1
@@ -9409,6 +9409,22 @@ SHA256sum: 09330a2ff6ed26a7c97fbc2a260e80bbdd251b88e24ea2f274805a31f8b878e2
 Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
  utility
 
+Package: dns2socks
+Version: 1.8-1
+Depends: libc, libpthread
+Source: package/dns2socks
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Chen RuiWei <crwbak@gmail.com>
+Architecture: mvebu
+Installed-Size: 6870
+Filename: custom/dns2socks_1.8-1_mvebu.ipk
+Size: 7672
+MD5Sum: f21742e8b662e73a7f2c31eae68d1576
+SHA256sum: 3055335fbf17e7849a051a7275c73e17b01930bcf56685c7bde8be07e517d393
+Description:  This is a utility to resolve DNS requests via a SOCKS5 tunnel and caches the answers.
+
 Package: kmod-fs-exfat
 Version: 3.18.23+git-20150301-1
 Depends: kernel (=3.18.23-1-81be0e40bf30c51dba2c46c84dd50f29), kmod-nls-base
@@ -9426,67 +9442,45 @@ SHA256sum: e4c4e94eb89217451c677d6484cf2ad687bebba17114c7cd643bab040b01cbec
 Description:  Kernel module for ExFAT Filesytems
 
 Package: kmod-mwlwifi
-Version: 3.18.23+10.3.0.17-20160324-1
+Version: 3.18.23+10.3.0.17-20160523-1
 Depends: kernel (=3.18.23-1-81be0e40bf30c51dba2c46c84dd50f29), kmod-mac80211
 Source: package/kernel/mwlwifi
 License: ISC
 Section: kernel
 Maintainer: Imre Kaloz <kaloz@openwrt.org>
 Architecture: mvebu
-Installed-Size: 229748
-Filename: custom/kmod-mwlwifi_3.18.23+10.3.0.17-20160324-1_mvebu.ipk
-Size: 230257
-MD5Sum: ea325fdf8f884234390ac705cac0216a
-SHA256sum: 4e7e8a2e221bd92518e20d5d2245134609bd7d736049b0a1ec310d5241f5e37c
+Installed-Size: 230218
+Filename: custom/kmod-mwlwifi_3.18.23+10.3.0.17-20160523-1_mvebu.ipk
+Size: 230714
+MD5Sum: 479578b1dea35d052eaf223934d602ac
+SHA256sum: 438d418cebd6e99d534a32a5416f6334903dfefc50cf64b5fe8ee4a5899d68f8
 Description:  Marvell 88W8864 wireless driver
 
-Package: luci-app-chinadns
-Version: 1.3.8-1
+Package: luci-app-adbyby
+Version: unknown-1
 Depends: libc
-Source: package/openwrt-dist-luci
-License: GPLv3
-LicenseFiles: LICENSE
+Source: package/luci-app-adbyby
 Section: luci
-Maintainer: Jian Chang <aa65535@live.com>
 Architecture: all
-Installed-Size: 1516
-Filename: custom/luci-app-chinadns_1.3.8-1_all.ipk
-Size: 2365
-MD5Sum: bf38775e448a22b1644f6e72058e1ac5
-SHA256sum: 977e2d94419e5d6eeb18d68b65517e0787fa600b9a1bae4f14c722a43d88d597
-Description:  LuCI Support for ChinaDNS.
+Installed-Size: 1943
+Filename: custom/luci-app-adbyby_unknown-1_all.ipk
+Size: 2675
+MD5Sum: d9443cfaa25fdbccd22d2e67fd10fc09
+SHA256sum: 8757f5a741fa605cfa73ac99f7cc4387ede07f364b6fff017766d883de9ef4d8
+Description:  LuCI Support for Adbyby
 
-Package: luci-app-redsocks2
-Version: 1.3.8-1
+Package: luci-app-shadowsocks
+Version: unknown-1
 Depends: libc
-Source: package/openwrt-dist-luci
-License: GPLv3
-LicenseFiles: LICENSE
+Source: package/luci-app-shadowsocks
 Section: luci
-Maintainer: Jian Chang <aa65535@live.com>
 Architecture: all
-Installed-Size: 1456
-Filename: custom/luci-app-redsocks2_1.3.8-1_all.ipk
-Size: 2307
-MD5Sum: 0cd4d4c6880e06d45ee738359de94576
-SHA256sum: 3c36efc5237b09f1a4758d2780a51ec936bc287b5332ba4fedbbd249c88707c6
-Description:  LuCI Support for RedSocks2.
-
-Package: luci-app-shadowsocks-spec
-Version: 1.3.8-1
-Depends: libc
-Source: package/openwrt-dist-luci
-License: GPLv3
-LicenseFiles: LICENSE
-Section: luci
-Maintainer: Jian Chang <aa65535@live.com>
-Architecture: all
-Installed-Size: 2858
-Filename: custom/luci-app-shadowsocks-spec_1.3.8-1_all.ipk
-Size: 3720
-MD5Sum: b8ce79c25df72f4f59137a6e7c861625
-SHA256sum: 38abead5de1855ea49e0ce4380fd915e510fc25bbd21544640ad9bd872a107b3
-Description:  LuCI Support for shadowsocks-libev-spec.
+Installed-Size: 3165
+Filename: custom/luci-app-shadowsocks_unknown-1_all.ipk
+Size: 3889
+MD5Sum: c1a7e46dd0f3cc4ec76953b19112585c
+SHA256sum: 33d2d833861905a04ac5c0e937b54defd68eab3d0d945368523ea165dd025300
+Description:  LuCI Support for Shadowsocks
 
 Package: luci-app-shadowvpn
 Version: 1.3.8-1
@@ -9504,6 +9498,32 @@ MD5Sum: 2183c0fdaf7590cbca24dcb061788dd1
 SHA256sum: 349eb9ea571c916cf21fe865c468492254273e9433d7fc3cf7f68f69d22603d7
 Description:  LuCI Support for ShadowVPN.
 
+Package: luci-i18n-adbyby-zh-cn
+Version: unknown-1
+Depends: libc, luci-app-adbyby
+Source: package/luci-app-adbyby
+Section: luci
+Architecture: all
+Installed-Size: 659
+Filename: custom/luci-i18n-adbyby-zh-cn_unknown-1_all.ipk
+Size: 1436
+MD5Sum: 41f0b17bd967ac0c92833cd64d3e4093
+SHA256sum: 1e55643362a8ac6ad0fc4e0985601b5f3c0e93dab632c702cc451b38f7188e21
+Description:  Translation for luci-app-adbyby - 普通话 (Chinese)
+
+Package: luci-i18n-shadowsocks-zh-cn
+Version: unknown-1
+Depends: libc, luci-app-shadowsocks
+Source: package/luci-app-shadowsocks
+Section: luci
+Architecture: all
+Installed-Size: 950
+Filename: custom/luci-i18n-shadowsocks-zh-cn_unknown-1_all.ipk
+Size: 1746
+MD5Sum: 7a6bb81283c609e13cf5c91ca5f680b9
+SHA256sum: 27ae6068c7cff0d611df6a57df71492deff1b8eb692b004e1baee0ea8abbc453
+Description:  Translation for luci-app-shadowsocks - 普通话 (Chinese)
+
 Package: luci-theme-material
 Version: 0.2.17-1
 Depends: libc
@@ -9517,35 +9537,19 @@ MD5Sum: d89faca1d3ba59dcbf1dcc7ed273a265
 SHA256sum: 2d674dbff02a9830fe6992191d430eb892a58a7cfbadbe3374d38d4d9f947643
 Description:  LuCI Theme - Material
 
-Package: shadowsocks-libev-spec-polarssl
-Version: 2.4.5-1
-Depends: libc, libpolarssl, libpthread, ipset, ip, iptables-mod-tproxy
-Source: package/shadowsocks-libev
+Package: shadowsocks
+Version: 2.4.6-1
+Depends: libc, libopenssl, libpthread, ipset, ip
+Source: package/shadowsocks
 License: GPLv3
 LicenseFiles: LICENSE
 Section: net
-Maintainer: Max Lv <max.c.lv@gmail.com>
+Maintainer: Chen RuiWei <crwbak@gmail.com>
 Architecture: mvebu
-Installed-Size: 120125
-Filename: custom/shadowsocks-libev-spec-polarssl_2.4.5-1_mvebu.ipk
-Size: 120905
-MD5Sum: 2e1a6cb93b5626a9f5542461bde60118
-SHA256sum: 98e8e9b5d5662dc515d5abc15c8e4671d708ff3ad203a6036f43fa727d898915
-Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
-
-Package: shadowsocks-libev-spec
-Version: 2.4.5-1
-Depends: libc, libopenssl, libpthread, ipset, ip, iptables-mod-tproxy
-Source: package/shadowsocks-libev
-License: GPLv3
-LicenseFiles: LICENSE
-Section: net
-Maintainer: Max Lv <max.c.lv@gmail.com>
-Architecture: mvebu
-Installed-Size: 119373
-Filename: custom/shadowsocks-libev-spec_2.4.5-1_mvebu.ipk
-Size: 120256
-MD5Sum: f38cab88c7a6a0cf54f90e8dbe451e24
-SHA256sum: f7dfbcb8ea0ea69255984d0243e398c0d208b3d2b670898817cd8df1fe644c46
-Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+Installed-Size: 184217
+Filename: custom/shadowsocks_2.4.6-1_mvebu.ipk
+Size: 184683
+MD5Sum: b7aca069b177b0809b83111d0e587fd7
+SHA256sum: 473d7bd61eff108cd63c82f71ea7d2e2349cc84ff5c78e318d606b27fb32264f
+Description:  shadowsocks is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 

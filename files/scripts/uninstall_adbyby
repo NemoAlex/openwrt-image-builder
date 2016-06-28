@@ -1,0 +1,5 @@
+#!/bin/sh
+opkg remove luci-i18n-adbyby-zh-cn luci-app-adbyby adbyby \
+&& rm /etc/config/dnsmasq/adblock.dns \
+&& /etc/init.d/dnsmasq restart
+

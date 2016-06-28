@@ -24,7 +24,7 @@ define Profile/Caiman
         block-mount kmod-fs-ext4 kmod-fs-exfat kmod-fs-hfsplus \
         samba36-server luci-app-samba luci-i18n-samba-zh-cn \
         minidlna luci-app-minidlna luci-i18n-minidlna-zh-cn \
-        ChinaDNS luci-app-chinadns shadowsocks-libev-spec luci-app-shadowsocks-spec ShadowVPN luci-app-shadowvpn \
+        dns2socks shadowsocks luci-app-shadowsocks luci-i18n-shadowsocks-zh-cn ShadowVPN luci-app-shadowvpn \
         aria2 wget ca-certificates \
         luci-i18n-firewall-zh-cn \
         luci-app-upnp luci-i18n-upnp-zh-cn \
@@ -60,7 +60,7 @@ define Profile/Cobra
         block-mount kmod-fs-ext4 kmod-fs-exfat kmod-fs-hfsplus \
         samba36-server luci-app-samba luci-i18n-samba-zh-cn \
         minidlna luci-app-minidlna luci-i18n-minidlna-zh-cn \
-        ChinaDNS luci-app-chinadns shadowsocks-libev-spec luci-app-shadowsocks-spec ShadowVPN luci-app-shadowvpn \
+        dns2socks shadowsocks luci-app-shadowsocks luci-i18n-shadowsocks-zh-cn ShadowVPN luci-app-shadowvpn \
         aria2 wget ca-certificates \
         luci-i18n-firewall-zh-cn \
         luci-app-upnp luci-i18n-upnp-zh-cn \
@@ -96,7 +96,7 @@ define Profile/Mamba
         block-mount kmod-fs-ext4 kmod-fs-exfat kmod-fs-hfsplus \
         samba36-server luci-app-samba luci-i18n-samba-zh-cn \
         minidlna luci-app-minidlna luci-i18n-minidlna-zh-cn \
-        ChinaDNS luci-app-chinadns shadowsocks-libev-spec luci-app-shadowsocks-spec ShadowVPN luci-app-shadowvpn \
+        dns2socks shadowsocks luci-app-shadowsocks luci-i18n-shadowsocks-zh-cn ShadowVPN luci-app-shadowvpn \
         aria2 wget ca-certificates \
         luci-i18n-firewall-zh-cn \
         luci-app-upnp luci-i18n-upnp-zh-cn \
@@ -132,7 +132,7 @@ define Profile/Shelby
         block-mount kmod-fs-ext4 kmod-fs-exfat kmod-fs-hfsplus \
         samba36-server luci-app-samba luci-i18n-samba-zh-cn \
         minidlna luci-app-minidlna luci-i18n-minidlna-zh-cn \
-        ChinaDNS luci-app-chinadns shadowsocks-libev-spec luci-app-shadowsocks-spec ShadowVPN luci-app-shadowvpn \
+        dns2socks shadowsocks luci-app-shadowsocks luci-i18n-shadowsocks-zh-cn ShadowVPN luci-app-shadowvpn \
         aria2 wget ca-certificates \
         luci-i18n-firewall-zh-cn \
         luci-app-upnp luci-i18n-upnp-zh-cn \

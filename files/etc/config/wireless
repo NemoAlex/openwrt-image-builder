@@ -1,10 +1,10 @@
 
 config wifi-device 'radio0'
         option type 'mac80211'
-        option channel '36'
+        option channel '52'
         option hwmode '11a'
         option path 'soc/soc:pcie-controller/pci0000:00/0000:00:01.0/0000:01:00.0'
-        option htmode 'VHT40'
+        option htmode 'VHT80'
         option country 'CN'
         option txpower '20'
 

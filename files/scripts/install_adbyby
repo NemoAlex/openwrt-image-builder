@@ -1,0 +1,6 @@
+#!/bin/sh
+opkg install http://koolshare.io/linksys_wrt1900ac_openwrt_nemo/1.4/adbyby/adbyby_2.6-20160420_mvebu.ipk \
+http://koolshare.io/linksys_wrt1900ac_openwrt_nemo/1.4/adbyby/luci-app-adbyby_unknown-1_all.ipk \
+http://koolshare.io/linksys_wrt1900ac_openwrt_nemo/1.4/adbyby/luci-i18n-adbyby-zh-cn_unknown-1_all.ipk \
+&& wget http://koolshare.io/linksys_wrt1900ac_openwrt_nemo/1.4/adbyby/adblock.dns -P /etc/config/dnsmasq/ \
+&& /etc/init.d/dnsmasq restart
